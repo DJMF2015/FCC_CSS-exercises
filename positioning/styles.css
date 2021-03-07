@@ -1,0 +1,77 @@
+.parent{
+background-color: lightblue;
+position: relative;
+height: 200vh
+}
+
+.child-one {
+position: absolute;
+top: 0;
+right: 10px;
+margin: 10px;
+height: 15px;
+background-color: lightgreen;
+border: 1px solid black;
+}
+
+.child-two{
+/*  position: relative; */
+ margin: 10px;
+ height: 15px;
+/*  left: 10px;; */
+ top: 0px;
+ background-color: pink;
+ border: 1px solid black;
+}
+
+.child-three{
+position: sticky;
+background-color: violet;
+height: 15px;
+border: 1px solid black;
+}
+/* RELATIVE POSITIONING -example 2 */
+.parent1{
+  background-color: #af47ff;
+  padding: 30px;
+  width: 300px;
+}
+
+.child1{
+  background-color: #ff4797;
+  padding: 30px; 
+}
+
+.box{ 
+  background-color: #f3ff47;6
+  padding: 30px;66
+  border-style: dotted;6
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;76877777776
+  /* top: -60px;   */
+  left: 100px;  
+}
+
+/* static position says that all elements should follow the document flow so that
+whatever comes 1st in html should come in order of elements. 
+Position relative acts similalry to static but allows you to do additonal things static does not:
+  [top, left, right and bottom ]
+  1) allows you to change postion relative to wehre it is in the document flow if it were statically positioned
+  2) Relative position when proeprties are adeed to it takes the element out of the document flow and
+   moves it down uo, down, lefot or right .  
+  3) IN practice, realtive does not get used for top/botton/left and right as
+  it becomes confusing and has to be repated for each relative element.
+  4) Absolute positon you do want to use for this instead.
+  
+  STATIC  : THIS IS THE DEFAULT value for the element. Static positioned elemenst are displayed in the normal page flow
+  RELATIVE: if setting positon: relative on an element you are able to position with an offset using the properties
+  top/tight/botton/left [see example 2 above]
+
+  ABSOLUTE: Setting positon: absollute on an element will remove from the doucment's flow. With absolute pos. as soon as
+  position:  absolute is set on .box , for example, it's orignal space is now collapsed an only the origin coordination (x,y) remain the same
+ 
+  FIXED: Like with absolute positioning, when an element is assigned position: fixed it's removed from the flow of the page.
+  The difference with absolute positioning is this: elements are now always positioned relative to the window, instead of the first non-static container.
+
+  */
